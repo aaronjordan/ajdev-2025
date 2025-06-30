@@ -50,6 +50,7 @@
 	},
 	"dependencies": {
 		"@libsql/client": "^0.14.0",
+		"bits-ui": "^2.8.10",
 		"drizzle-orm": "^0.40.0"
 	}
 }
