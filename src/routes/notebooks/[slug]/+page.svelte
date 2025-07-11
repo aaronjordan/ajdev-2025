@@ -13,6 +13,7 @@
   <title>{post.metadata.title}</title>
 </svelte:head>
 <main class="col-2">
-  <p>Hello world</p>
-  <Contents />
+  <div class="content flex flex-col gap-4">
+    <Contents />
+  </div>
 </main>
