@@ -20,11 +20,19 @@
 
   :not(pre) > code {
     display: inline-block;
-    /* background: var(--color-emerald-900); */
+    background: #1d2021; /* from gruv? */
     padding-inline: --spacing(2);
     font-size: 0.9rem;
     border-radius: var(--radius-sm);
     box-shadow: 0 1px 3px rgb(0 0 0 / 0.2) inset;
+    user-select: all;
+  }
+
+  pre {
+    background: var(--color-zinc-900);
+    border-radius: var(--radius-md);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2) inset;
+    font-size: 0.9rem;
     user-select: all;
   }
 
@@ -39,7 +47,7 @@
     font-size: 0.85em;
     font-weight: 700;
     line-height: 1;
-    padding: --spacing(0.5) --spacing(1);
+    padding: --spacing(1) --spacing(2);
     white-space: nowrap;
   }
 }
