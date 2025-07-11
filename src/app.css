@@ -9,4 +9,37 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  ::selection {
+    background-color: color-mix(
+      in srgb,
+      var(--color-emerald-500) 25%,
+      transparent
+    );
+  }
+
+  :not(pre) > code {
+    display: inline-block;
+    /* background: var(--color-emerald-900); */
+    padding-inline: --spacing(2);
+    font-size: 0.9rem;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2) inset;
+    user-select: all;
+  }
+
+  kbd {
+    background-color: var(--color-zinc-200);
+    border-radius: var(--radius-sm);
+    box-shadow:
+      0 1px 1px rgb(0 0 0 / 0.2),
+      0 2px 0 0 rgb(255 255 255 / 0.7) inset;
+    color: var(--color-zinc-800);
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: --spacing(0.5) --spacing(1);
+    white-space: nowrap;
+  }
 }

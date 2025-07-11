@@ -41,7 +41,7 @@ export function listPostsByPrefix(args: ListPostsArgs) {
     const next = PostSchema.parse(post);
     res.push({ ...next, kind, date });
   }
-  return res;
+  return res.reverse();
 }
 
 /**

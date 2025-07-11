@@ -25,7 +25,7 @@
   let socialsOpen = $state(false);
 </script>
 
-<div class="col-2 flex justify-start gap-2">
+<div class="col-2 flex flex-wrap justify-start gap-2">
   {#each entries as link}
     <a href={link.to} class={link.class}>
       <span class="text-zinc-500">&gt;</span>

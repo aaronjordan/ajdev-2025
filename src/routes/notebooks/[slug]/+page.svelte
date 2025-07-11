@@ -9,5 +9,10 @@
   const Contents = post.default;
 </script>
 
-<p>Hello world</p>
-<Contents />
+<svelte:head>
+  <title>{post.metadata.title}</title>
+</svelte:head>
+<main class="col-2">
+  <p>Hello world</p>
+  <Contents />
+</main>

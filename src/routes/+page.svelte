@@ -1,24 +1,27 @@
-<main class="mx-[4ch] mt-12 flex flex-col gap-6 text-zinc-200">
-  <header class="mb-2">
-    <h1 class="text-emerald-300">10 Tips to Improve TypeScript Readability</h1>
-    <div class="text-emerald-300">
-      :::::::::::::::::::::::::::::::::::::::::
-    </div>
-    <div class="text-zinc-500">:: 2025-06-29 :: 6 min read</div>
-    <div class="text-zinc-500">:: #tag-one #tag-two #tag-three</div>
-  </header>
-  <p>
+<script>
+  import PostHeader from "../components/PostHeader.svelte";
+</script>
+
+<main class="col-2 flex flex-col gap-6 text-zinc-200">
+  <PostHeader />
+  <p class="font-[Fira Sans]">
     Bun.js is an all-in-one JavaScript runtime, bundler, and package manager,
     designed for speed and efficiency. It's often seen as an alternative to
     Node.js, offering significant performance improvements in many areas.
   </p>
-  <h2 class="text-emerald-300">:: Key Features</h2>
+  <h1 class="font-bold text-emerald-300">&gt;&gt; Key Features</h1>
+  <h2 class="text-emerald-300">:: More on Runtimes</h2>
+  <h3 class="text-zinc-300">// V8 - the standard choice</h3>
   <p>Here's a breakdown of its key features and what makes it noteworthy:</p>
   <p>
     JavaScript Runtime: Like Node.js, Bun allows you to execute JavaScript code
     outside of a web browser. It's built on the JavaScriptCore engine (used by
     WebKit/Safari), which is generally known for its fast startup times and
     execution speed.
+  </p>
+  <p>
+    This paragraph features a <code>bun add react react-router</code> as well as
+    a <kbd>k</kbd> key
   </p>
   <ul>
     <li>This is a list item</li>
