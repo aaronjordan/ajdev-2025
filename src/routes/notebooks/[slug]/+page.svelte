@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { PageProps } from "./$types";
   import { getPostBySlug } from "../../../posts";
+  import { pageTitle } from "$lib/util/title";
   import { error } from "@sveltejs/kit";
 
   const { data }: PageProps = $props();
@@ -10,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>{post.metadata.title}</title>
+  <title>{pageTitle(post.metadata.title)}</title>
 </svelte:head>
 <main class="col-2">
   <div class="content flex flex-col gap-4">

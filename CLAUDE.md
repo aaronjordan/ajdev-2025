@@ -44,7 +44,7 @@ This is a SvelteKit application with the following key characteristics:
 
 The application uses a file-based content system where:
 
-- Content files follow naming pattern: `{kind}-{YYMMDD}.md` (e.g., `note-250702.md`, `snippet-250703.md`)
+- Content files follow naming pattern: `{kind}-{YYYYMMDD}.md` (e.g., `note-20250702.md`, `snippet-20250703.md`)
 - Two content types: "note" and "snippet"
 - Posts are processed via `src/posts/index.ts` with automatic metadata extraction
 - Routes are organized under `/notebooks/` (for notes) and `/snippets/`
