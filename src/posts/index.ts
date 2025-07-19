@@ -16,6 +16,8 @@ const PostSchema = z.object({
   metadata: z.object({
     slug: z.string(),
     title: z.string(),
+    ttr: z.string().optional(),
+    tags: z.array(z.string()).optional(),
   }),
 });
 

@@ -1,5 +1,5 @@
 import type { Load } from "@sveltejs/kit";
-import { listPostsByPrefix, groupByYear } from "../../posts";
+import { listPostsByPrefix, groupByYear } from "@posts";
 
 export const prerender = true;
 export const trailingSlash = "always";

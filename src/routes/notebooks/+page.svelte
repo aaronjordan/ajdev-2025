@@ -14,7 +14,7 @@
   {#each props.data.groups as group}
     <section class="mb-8">
       <h2 class="mb-4 text-lg font-semibold text-emerald-300">
-        ** 20{group.year} **
+        ** {group.year} **
       </h2>
       <ul>
         {#each group.posts as post}

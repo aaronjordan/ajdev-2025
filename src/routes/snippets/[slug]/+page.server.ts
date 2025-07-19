@@ -1,5 +1,5 @@
 import { error, type Load } from "@sveltejs/kit";
-import { getPostBySlug, listPostsByPrefix } from "../../../posts";
+import { getPostBySlug, listPostsByPrefix } from "@posts";
 import type { EntryGenerator } from "./$types";
 
 export const prerender = true;

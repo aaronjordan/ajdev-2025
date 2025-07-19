@@ -16,17 +16,17 @@ const months = Object.freeze({
 type DateFormat = "short" | "full" | "year";
 
 /**
- * Formats the YYMMDD `dateCode`:
+ * Formats the YYYYMMDD `dateCode`:
  * - short: oct 3
  * - full: oct 3, 2025
  * - year: 2025
  */
 export function formatDate(dateCode: string, format: DateFormat = "full") {
-  if (dateCode.length !== 6) throw TypeError(`Invalid date code: ${dateCode}`);
-  const year = dateCode.slice(0, 2);
-  const month = dateCode.slice(2, 4) as keyof typeof months;
+  if (dateCode.length !== 8) throw TypeError(`Invalid date code: ${dateCode}`);
+  const year = dateCode.slice(0, 4);
+  const month = dateCode.slice(4, 6) as keyof typeof months;
   if (!(month in months)) throw TypeError(`Invalid value for month: ${month}`);
-  const day = dateCode.slice(4, 6);
+  const day = dateCode.slice(6, 8);
 
   switch (format) {
     case "short":
@@ -34,6 +34,6 @@ export function formatDate(dateCode: string, format: DateFormat = "full") {
     case "year":
       return year;
     default: // "full"
-      return `${months[month]} ${day}, 20${year}`;
+      return `${months[month]} ${day}, ${year}`;
   }
 }

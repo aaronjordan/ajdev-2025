@@ -1,5 +1,5 @@
 <script>
-  import PostHeader from "../components/PostHeader.svelte";
+  import PostHeader from "@components/PostHeader.svelte";
 </script>
 
 <main class="col-2 flex flex-col gap-6 text-zinc-200">
