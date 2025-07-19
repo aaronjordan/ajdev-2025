@@ -1,9 +1,12 @@
 <script>
+  import Meta from "@components/Meta.svelte";
   import PostHeader from "@components/PostHeader.svelte";
 </script>
 
+<Meta title="Home" description="A really cool website" />
+
 <main class="col-2 flex flex-col gap-6 text-zinc-200">
-  <PostHeader />
+  <PostHeader title="Testing!" date="2025-08-02" />
   <p class="font-[Fira Sans]">
     Bun.js is an all-in-one JavaScript runtime, bundler, and package manager,
     designed for speed and efficiency. It's often seen as an alternative to

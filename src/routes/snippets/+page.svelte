@@ -1,15 +1,13 @@
 <script lang="ts">
-  import { formatDate } from "$lib/util/formatDate";
-  import { pageTitle } from "$lib/util/title";
   import type { PageProps } from "./$types";
+
+  import { formatDate } from "$lib/util/formatDate";
+  import Meta from "@components/Meta.svelte";
 
   const props: PageProps = $props();
 </script>
 
-<svelte:head>
-  <title>{pageTitle("Snippets")}</title>
-</svelte:head>
-
+<Meta title="Snippets" description="hello world" />
 <div class="col-2">
   {#each props.data.groups as group}
     <section class="mb-8">
