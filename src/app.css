@@ -122,4 +122,26 @@
   .snippet-content h2 {
     color: var(--color-ctp-green);
   }
+
+  article > * {
+    grid-column: 2;
+  }
+
+  article > .col-span-3 {
+    grid-column: 1 / -1;
+  }
+
+  article > pre {
+    grid-column: 1 / -1;
+    margin-inline: -2ch;
+    padding-inline: 3ch;
+    border-radius: 0;
+    overflow-x: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    article > pre {
+      padding-inline: 6ch;
+    }
+  }
 }

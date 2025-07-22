@@ -13,15 +13,11 @@
 </script>
 
 <Meta title={post.metadata.title} description="hello world" />
-<main class="col-2">
-  <div class="content snippet-content flex flex-col gap-4">
-    <PostHeader
-      title={post.metadata.title}
-      date={formatDate(post.date)}
-      ttr={post.metadata.ttr}
-      tags={post.metadata.tags}
-      theme="snippet"
-    />
-    <Contents />
-  </div>
-</main>
+<PostHeader
+  title={post.metadata.title}
+  date={formatDate(post.date)}
+  ttr={post.metadata.ttr}
+  tags={post.metadata.tags}
+  theme="snippet"
+/>
+<Contents class="content snippet-content" />

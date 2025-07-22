@@ -5,23 +5,6 @@
   let { children } = $props();
 </script>
 
-<!-- <header
-  class="grid grid-cols-[3ch_1fr_3ch] gap-[1ch] pt-6 pb-4 hover:cursor-default"
->
-  <span class="col-1 justify-self-end text-ctp-overlay1">/**</span>
-  <span class="whitespace col-1 justify-self-end text-ctp-overlay1">*&nbsp;</span>
-  <div class="col-2 flex justify-between">
-    <a href="/">
-      <h1 class="hover:text-ctp-peach">
-        <span class="text-ctp-overlay1">@&nbsp;</span>aaronjordan.dev
-      </h1>
-    </a>
-  </div>
-  <span class="whitespace col-1 justify-self-end text-ctp-overlay1">*&nbsp;</span>
-  <Nav />
-  <span class="col-1 justify-self-end text-ctp-overlay1">*/</span>
-</header> -->
-
 <header
   class="grid grid-cols-[0_1fr_0] gap-[1ch] pt-6 pb-4 hover:cursor-default md:grid-cols-[3ch_1fr_3ch]"
 >
@@ -36,8 +19,10 @@
   <Nav />
 </header>
 
-<div
-  class="relative grid grid-cols-[0_1fr_0] gap-[1ch] pt-4 pb-4 hover:cursor-default md:grid-cols-[3ch_1fr_3ch]"
->
-  {@render children()}
-</div>
+<main>
+  <article
+    class="grid grid-cols-[0_1fr_0] gap-[1ch] pt-4 pb-4 hover:cursor-default md:grid-cols-[3ch_1fr_3ch]"
+  >
+    {@render children()}
+  </article>
+</main>

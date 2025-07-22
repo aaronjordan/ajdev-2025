@@ -5,8 +5,8 @@
 
 <Meta title="Home" description="A really cool website" />
 
-<main class="col-2 flex flex-col gap-6 text-ctp-text">
-  <PostHeader title="Testing!" date="2025-08-02" />
+<PostHeader title="Testing!" date="2025-08-02" />
+<div class="flex flex-col gap-6 text-ctp-text">
   <p class="font-[Fira Sans]">
     Bun.js is an all-in-one JavaScript runtime, bundler, and package manager,
     designed for speed and efficiency. It's often seen as an alternative to
@@ -50,6 +50,6 @@
     and JSX, meaning you don't need to configure additional compilers or loaders
     to use these technologies. This simplifies project setup and development.
   </p>
-</main>
+</div>
 
 <footer class="h-30"></footer>
