@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { PageProps } from "./$types";
-
   import { formatDate } from "$lib/util/formatDate";
   import Meta from "@components/Meta.svelte";
 

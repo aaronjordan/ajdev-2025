@@ -5,7 +5,7 @@
    * Flat nav entries
    */
   const entries = [
-    { class: "hover:text-yellow-300", label: "about", to: "/" },
+    { class: "hover:text-yellow-300", label: "about", to: "/about" },
     { class: "hover:text-green-300", label: "notebooks", to: "/notebooks" },
     { class: "hover:text-sky-300", label: "snippets", to: "/snippets" },
   ];
@@ -25,7 +25,7 @@
   let socialsOpen = $state(false);
 </script>
 
-<div class="col-2 flex flex-wrap justify-start gap-2">
+<div class="col-2 flex flex-col flex-wrap items-start gap-2 sm:flex-row">
   {#each entries as link}
     <a href={link.to} class={link.class}>
       <span class="text-zinc-500">&gt;</span>
@@ -33,7 +33,7 @@
     </a>
   {/each}
   <DropdownMenu.Root bind:open={socialsOpen}>
-    <DropdownMenu.Trigger>
+    <DropdownMenu.Trigger class="text-left">
       <div class="hover:text-indigo-300 {socialsOpen ? 'text-indigo-300' : ''}">
         <span class="text-zinc-500">&gt;</span>
         <span>social</span>

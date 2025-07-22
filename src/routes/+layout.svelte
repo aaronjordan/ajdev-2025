@@ -23,7 +23,7 @@
 </header> -->
 
 <header
-  class="grid grid-cols-[3ch_1fr_3ch] gap-[1ch] pt-6 pb-4 hover:cursor-default"
+  class="grid grid-cols-[0_1fr_0] gap-[1ch] pt-6 pb-4 hover:cursor-default md:grid-cols-[3ch_1fr_3ch]"
 >
   <div class="col-2 flex justify-between">
     <a href="/">
@@ -36,7 +36,7 @@
 </header>
 
 <div
-  class="grid grid-cols-[3ch_1fr_3ch] gap-[1ch] pt-4 pb-4 hover:cursor-default"
+  class="grid grid-cols-[0_1fr_0] gap-[1ch] pt-4 pb-4 hover:cursor-default md:grid-cols-[3ch_1fr_3ch]"
 >
   {@render children()}
 </div>
