@@ -10,7 +10,7 @@
 <div class="col-2">
   {#each props.data.groups as group}
     <section class="mb-8">
-      <h2 class="mb-4 text-lg font-semibold text-ctp-green">
+      <h2 class="mb-4 text-lg font-semibold text-ctp-sky">
         ** {group.year} **
       </h2>
       <ul>
@@ -20,7 +20,7 @@
               <span class="text-ctp-subtext1">{formatDate(post.date, "short")}</span
               >
               <span class="text-ctp-overlay1">::</span>
-              <span class="group-hover:text-ctp-blue">{post.title}</span>
+              <span class="group-hover:text-ctp-sky">{post.title}</span>
             </a>
           </li>
         {/each}

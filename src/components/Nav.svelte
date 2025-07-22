@@ -12,14 +12,14 @@
       to: "/about",
     },
     {
-      class: "hover:text-ctp-green",
-      groupClass: "group-hover:text-ctp-green",
+      class: "hover:text-ctp-sky",
+      groupClass: "group-hover:text-ctp-sky",
       label: "notebooks",
       to: "/notebooks",
     },
     {
-      class: "hover:text-ctp-sky",
-      groupClass: "group-hover:text-ctp-sky",
+      class: "hover:text-ctp-green",
+      groupClass: "group-hover:text-ctp-green",
       label: "snippets",
       to: "/snippets",
     },

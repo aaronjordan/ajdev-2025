@@ -37,7 +37,7 @@
 </header>
 
 <div
-  class="grid grid-cols-[0_1fr_0] gap-[1ch] pt-4 pb-4 hover:cursor-default md:grid-cols-[3ch_1fr_3ch]"
+  class="relative grid grid-cols-[0_1fr_0] gap-[1ch] pt-4 pb-4 hover:cursor-default md:grid-cols-[3ch_1fr_3ch]"
 >
   {@render children()}
 </div>
