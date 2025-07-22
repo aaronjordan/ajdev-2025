@@ -33,7 +33,7 @@
     background: var(--color-ctp-mantle);
     border-radius: var(--radius-md);
     box-shadow: 0 1px 3px rgb(0 0 0 / 0.2) inset;
-    font-size: 1rem;
+    font-size: 0.98rem;
     padding: 2ch;
     margin-block: 1ch;
   }
