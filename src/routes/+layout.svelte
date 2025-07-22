@@ -27,8 +27,9 @@
 >
   <div class="col-2 flex justify-between">
     <a href="/">
-      <h1 class="hover:text-orange-300">
-        <span class="text-zinc-500">@&nbsp;</span>aaronjordan.dev
+      <h1 class="group hover:text-ctp-peach">
+        <span class="text-ctp-overlay1 group-hover:text-ctp-peach">@&nbsp;</span
+        >aaronjordan.dev
       </h1>
     </a>
   </div>

@@ -9,13 +9,13 @@
   const { title, date, ttr, tags }: Props = $props();
 </script>
 
-<header class="mb-2 flex flex-col gap-2 border-b border-zinc-700 pb-3">
-  <h1 class="mb-1 text-4xl font-bold tracking-tight text-emerald-300">
+<header class="border-ctp-surface1 mb-2 flex flex-col gap-2 border-b pb-3">
+  <h1 class="text-ctp-sapphire mb-1 text-4xl font-bold tracking-tight">
     {title}
   </h1>
-  <div class="text-zinc-500">:: {date}{ttr ? ` :: ${ttr}` : ""}</div>
+  <div class="text-ctp-subtext0">:: {date}{ttr ? ` :: ${ttr}` : ""}</div>
   {#if tags && tags.length > 0}
-    <div class="text-zinc-500">
+    <div class="text-ctp-subtext0">
       ::
       {#each tags as t}
         <span class="mr-3">#{t}</span>
