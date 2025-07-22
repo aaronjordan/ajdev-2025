@@ -5,16 +5,16 @@
 
 <Meta title="Home" description="A really cool website" />
 
-<main class="col-2 flex flex-col gap-6 text-zinc-200">
+<main class="col-2 flex flex-col gap-6 text-ctp-text">
   <PostHeader title="Testing!" date="2025-08-02" />
   <p class="font-[Fira Sans]">
     Bun.js is an all-in-one JavaScript runtime, bundler, and package manager,
     designed for speed and efficiency. It's often seen as an alternative to
     Node.js, offering significant performance improvements in many areas.
   </p>
-  <h1 class="font-bold text-emerald-300">&gt;&gt; Key Features</h1>
-  <h2 class="text-emerald-300">:: More on Runtimes</h2>
-  <h3 class="text-zinc-300">// V8 - the standard choice</h3>
+  <h1 class="font-bold text-ctp-green">&gt;&gt; Key Features</h1>
+  <h2 class="text-ctp-green">:: More on Runtimes</h2>
+  <h3 class="text-ctp-subtext1">// V8 - the standard choice</h3>
   <p>Here's a breakdown of its key features and what makes it noteworthy:</p>
   <p>
     JavaScript Runtime: Like Node.js, Bun allows you to execute JavaScript code
